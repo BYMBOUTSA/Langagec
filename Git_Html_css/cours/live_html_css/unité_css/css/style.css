@@ -1,0 +1,122 @@
+/* Importation d'une police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+/*Reset du body, largeur maxi disponible, sans marin sans padding*/
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Position: relative afin de pouvoir positionner le header dans le flux */
+/* Largeur de 80% du Body, décalé à gauche de 10% pour le centrer */
+/* Hauteur en VH qui permet un ajustement proportionnel */
+header {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 14vh;
+    border: 1px solid black;
+}
+
+/* Taille de la police  en EM qui permet un redimensionnement en fonction de l'écran */
+/* MAX-HEIGHT permet de réduire l'interligne avec l'élément H2 qui se trouve en-dessous */
+/* L'élément H2 reste dans le HEADER en réduisant la largeur de l'écran */
+h1 {
+    font-size: 1.6em; /* dimensionnement en taille */
+    font-weight: bold; /* dimensionnement en épaisseur */
+    color: blue; /* affectation d'une couleur à h1 */
+    text-align: center; /* alignement de h1 au centre */
+    max-height: 0.5em; /* Utilisation d'une longueur maximal qui permet de jouer sur l'interligne avec l'élément en dessous. */
+
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: bolder; /* légèrement moins épais que bold */
+    color: blue;
+    text-align: center;
+
+}
+
+/* Les titres intermédiaires de chaque bloc SPAN avec interlignes réduit */
+h3 {
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: blue;
+    text-indent: 1.8em; /* Pour faire un léger décalage */
+    max-height: 0.3em;
+
+}
+
+/* Bloc du contenu principal, en position relative */
+/* Largeur 80% du body, décalé de 10% à gauche pour son alignement */
+/* Hauteur adaptative en VH. overflow AUTO pour permettre le défilement */
+main {
+    position: relative;
+    width: 80%;
+    top: 1vh; /* permer de faire un petit décalage */
+    left: 10%;
+    height: 76vh;
+    border: 1px solid black;
+    overflow: auto; /* Permet quand on dépasse d'avoir l'ascenseur qui fait défiler le contenu */
+}
+
+/* Les blocs Span de contenu des textes font 90% du MAIN, décalé à 5% pour centrage */
+/* DISPLAY = BLOCK pour maintenir les SPAN dans leur élément parent */
+span {
+    position: relative;
+    display: block;
+    width: 90%;
+    top: 1vh; /* décaler les uns des autres */
+    left: 5%;
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: black;
+}
+
+/* Le FOOTER à 80%, gauche 10% pour le centrer et l'aligner sous */
+/* HEADER et MAIN */
+footer {
+    position: relative;
+    width: 80%;
+    top: 2vh;
+    left: 10%;
+    height: 10vh; /* pour la hauteur verticale */
+    border: 1px solid black;
+}
+
+/* Différentes classes applicables aux éléments SPAN */
+/* Pour tester des mises en formes de texte */
+/* Texte barré */
+.txtBarre {
+    text-decoration-line: line-through ;
+}
+
+/* Mise en majuscule de chaque première lettre */
+.txtCapital {
+    text-transform: capitalize;
+}
+
+/* Justification par défaut. Peut prendre les valeurs left, right, etc */
+.txtJustify {
+    text-align: justify;
+}
+
+/* Consrve un écartement identique entre chaque occurence */
+.txtInterWord {
+    text-justify: inter-word;
+}
+
+/* Génère une ombre portée */
+.txtShadow {
+    text-shadow: 1px 1px 2px blueviolet;
+}
+
+/* Crée un écartement spécifique entre chaque lettres d'un mot */
+.txtEspace {
+    letter-spacing: 1px;
+}

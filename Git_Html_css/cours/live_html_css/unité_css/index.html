@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les unités en CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Les unités en CSS</h1>
+        <h2>px, %, em, rem... quelle unité de mesure utiliser en CSS ?</h2>
+    </header>
+    <main>
+        <span class="txtCapital">En CSS vous pouvez ajuster la taille de vos textes et éléments avec différentes unités.
+            Il en existe plusieurs mais les plus connues sont surement le pixel (px) et le pourcentage 
+            (%). Effectivement ces deux unités sont pratiques car elles remplissent chacune une 
+            fonctionnalité de par leur nature. Le pixel est une unité absolue relative à la taille 
+            et résolution de l'écran qui permet un affichage net sur chaque écran alors que le 
+            pourcentage est une unité relative à un élément HTML qui permet de définir une taille en 
+            fonction de celle de l'élément HTML parent. Cependant, il existe d'autres unités qui ont 
+            chacune leur particularité et certaines une unité spécifique. A travers cet, nous allons
+            voir les existantes en CSS et lesquelles ont une utilité spécifique.
+            Parmi les différentes unités de taille il existe des unités qui ne sont conseillées
+            à utiliser pour un affichage sur un écran d'ordinateur. Vous pouvez néanmoins utiliser ces 
+            unités pour des supports haute-résolution ou bien pour les supports d'impression. Ces unités 
+            sont les : pt, cm, mm, in et pc qui représentent respectivement le « point », « millimètre »,
+            « centimètre », « pouce » et « pica ».
+        </span>
+        <h3>Le pixel</h3>
+        <span class="txtJustify">Le pixel comme vu en introduction de cet article, est une unité relative à la résolution et à la taille
+            de l'écran sur lequel il est affiché. Cette unité considére comme « magique » permet un affichage net et visible,
+            même si petite, sur n'importe quel support.</span>
+        <h3>Le pourcentage</h3>
+        <span class="txtInterWord ">Cette unité notée « % » est relative à son élément parent. Un élément avec une taille de « 50% » et qui a un élément 
+            parent avec une taille de 50px aura alors une taille de 25px. Le pourcentage sera à utiliser à chaque fois que vous 
+            souhaiterez définir une taille en fonction de son élément parent.</span>
+        <h3>Le em</h3>
+        <span class="txtShadow">Le « em » correspond à la taille de la police de caractère de l'élément en cours et si cette taille n'est pasredéfinie 
+            alors cette taille correspondra à la taille de la police de l'élément parent. Par exemple, si la taille de la police est 
+            définie à 20px alors 1em sera égale à 20px. Cette unité pourra vous permettre de définir les marges intérieures « padding » 
+            ou extérieures « margin » qui seront seront liées à la taille du texte et ainsi les redimensionner en fonction de cette dernière 
+            sur différents supports. Ainsi sur un grand écran, les marges seront plus grandes tout comme la taille du texte et à l'inverse sur
+            un petit écran (comme un écran de smartphone) les textes seront plus petits et les marges aussi. Vous trouverez souvent les déclarations 
+            « margin: 1em » et « text-indent: 1.5em » en CSS.</span>
+        <h3>Le ex</h3>
+        <span class="txtEspace">L'unité « ex » est une unité rarement utilisée qui permet d'exprimet les tailles relatives à 1'x-height de la police. Le x-height est 
+            la hauteur des plus petites lettres (minuscules) d'une police.</span>
+        <h3>Le rem</h3>
+        <span>L'unité « rem » signifiant « root em » reprend le principe de l'unité « em », c'est-à-dire correspondre à la taille de la police d'un élément
+            et cet élément est l'élément racine du document (root). Ainsi le « rem » permet de définir une valeur constante tout le long du document 
+            égale à la taille de la police de l'élément racine. Cette unité peut être alors utilisée pour créer des éléments et propriétés CSS responsives
+            puisqu'elle s'adaptera à la taille de la police du support d'affichage.</span>
+        <h3>Les vw et vh</h3>
+        <span>Les unités « vw » et  « vh » sont similaires car elles correspondent au viewport de la fenêtre.
+            « vw » correspondra à la largeur du viewport alors que « vh » se réferera à la hauteur du viewport
+            « vw » correspond ainsi à 1/100 e ou 1% de la largeur de la fenêtre et de même pour « vh » qui
+            équivaut à 1/100 e ou 1% de la hauteur de la fenêtre. Grâce à ces deux unités, vous allez pouvoir
+            définir des tailles relatives à la taille du viewport de votre support d'affichage et ainsi créer 
+            facilement des éléments responsifs ou par exemple un élément qui prendra toute la largeur de l'écran.</span>
+        <h3>Les vmin et vmax</h3>
+        <span>Les unités « vmin » et « vmax » équivalent respectivement à 1/100 e de la dimension la petite e
+            à 1/100 e de la dimension la grande du viewport. Les éléments avec une unité « vmin » s'adapterons
+            selon la hauteur de la fenêtre alors que les éléments avec une unité « vmax » s'adapterons selon la
+            largeur de la fenêtre. Pour un viewport ayant les dimensions suivantes : 2000 px de large et 1000 px
+            de hauteur, une valeur de « 1vmin » sera égale à « 10px » et une valeur de « 1vmax » équivaudra à
+            « 20px ».</span>
+        <h3>Conclusion</h3>
+        <span>Il existe de nombreuses unités de taille en CSS, certaines ne seront à utiliser que pour quelque
+            cas particuliers tel que les pt, cm, mm, in, pc et les autres seront à utilisé selon le besoin.
+            Néanmoins, les unités relatives sont souvent plus appréciées pour leur côté « adapte » et les 
+            unités « rem », « vh » et « vw » sont de plus en plus utilisées pour leur simplicité et efficacité
+            de gestion du multi-support. L'utilisation des bonnes unités est un chapitre complexe de l'apprentrissage 
+            du CSS. Les unités nécessitent d'être choisies correctement pour avoir un affichage harmonieux 
+            tout type d'écran.</span>
+        <h3>Bonus : Utiliser une police de caractères spécifique</h3>
+        <span>Les polices de  caractères par défaut dans les navigateurs sont choisies par les internautes. vous
+            décider d'appliquer une police de caractères particulière, en l'important soit dans la page HTML
+            avec une balise "LINK", soit dans votre feuille de style avec la commande "@import : url('urldelapo')"
+            Vous trouverez de nombreuses polices de caractères sur le site de <a href="https://fonts.google.com"></a>
+            notamment. Il en existe de nombreux autres.
+        </span>
+    </main>
+
+    <footer>
+        <h2>Article sur les unités en CSS - Formation Studi Live Septembre 2021</h2>
+    </footer>
+    
+</body>
+</html>

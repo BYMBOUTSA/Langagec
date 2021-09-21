@@ -1,0 +1,24 @@
+/* Importation du style */
+
+
+
+/* Reset de notre body */
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-color: ghostwhite;
+	/*font-family: 'Roboto', sans-serif;*/
+}
+
+/* On s'attaque maintenant à l'entête de notre document */
+header {
+	position: relative;
+	width: 80%;
+	height: 12vh;
+	left: 10%;
+	color: red;
+	/* border: width style color */
+	border: 2px dotted blue;
+
+}
