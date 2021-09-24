@@ -1,6 +1,5 @@
 /* Importation du style */
-
-
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
 
 /* Reset de notre body */
 body {
@@ -8,7 +7,7 @@ body {
 	padding: 0px;
 	width: 100%;
 	background-color: ghostwhite;
-	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Stick No Bills', sans-serif;
 }
 
 /* On s'attaque maintenant à l'entête de notre document */
@@ -19,6 +18,96 @@ header {
 	left: 10%;
 	color: red;
 	/* border: width style color */
-	border: 2px dotted blue;
-
+	border: 2px dashed blue;
 }
+
+
+/* balise h1 */
+h1 {
+	font-size: 1.4em;
+	font-weight: bold;
+	text-align: center;
+	color: red;
+	max-height: 1.5em;
+}
+
+/* balise h2 */
+h2 {
+	font-size: 1.2em;
+	font-weight: bolder;
+	text-align: center;
+	color: red;
+}
+
+/* balise h3 */
+h3 {
+	font-size: 1.4em;
+	font-weight: bolder;
+	color: grey;
+	text-indent: 2.6em;
+	max-height: 2.5em;
+}
+
+/* balise principale */
+main {
+	position: relative;
+	width: 80%;
+	top: 2.5vh; /* Permet décaler le contenu main vers le bas */
+	left: 10%; /* Permet de décaler le contenu vers la droite */
+	height: 75vh; /* Permet d'avoir la longueur de la enpete */
+	border: 2px dashed blue;
+	overflow: auto; /* Permet de mettre un curseur lorsque le texte est très long */
+}
+
+/* balise span */
+span {
+	position: relative;
+	display: block;
+	width: 80%;
+	top: 0.5vh;
+	left: 1%;
+	font-size: 1.1em;
+	font-weight: lighter;
+	color: black;
+}
+
+/* Pied de page */
+footer {
+	position: relative;
+	width: 80%;
+	top: 2.3vh;
+	left: 10%;
+	height: 7vh;
+	border: 2px solid black;
+}
+
+/* Création de quelques classes */
+.txtShadow {
+	text-shadow: 1px  1px 1px blue;
+}
+
+.txtJustify {
+	text-align: justify; /* pour justifier notre texte */
+}
+
+.txtTransform {
+	text-transform: none; /* Pour choisir comment présenter le texte en majuscule ou minuscule etc */
+}
+
+.txtIndent {
+	text-indent: 2.5em;
+}
+
+.txtSpacing{
+	word-spacing: 2.5px; /* Permet de gérer l'espace entre les différents mots d'un contenu */
+}
+
+.txtDecoration {
+	text-decoration: underline red; /* Permet de souligne le contenu en rouge, on peut ajouter des vagues avec wavy entre les deux termes */
+}
+
+.txtOrientation {
+	writing-mode: vertical-rl; /* Permet d'orienter le texte verticalement */
+	text-orientation: mixed;
+}
+
