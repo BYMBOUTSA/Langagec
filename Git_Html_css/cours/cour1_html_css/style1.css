@@ -1,0 +1,93 @@
+/* Feuille de style pour une mise en forme */
+body {
+    width: 100;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(240, 255, 251);
+}
+
+header {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    color: blue;
+    border: double;
+    left: 10%;
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+h2 {
+    text-indent: 2.5%;
+    color: blue;
+}
+
+h3 {
+    text-indent: 5%;
+    font-weight: bold;
+    color: grey;
+    text-decoration: underline;
+}
+
+
+main {
+    position: relative;
+    font-weight: bolder;
+    width: 80%;
+    height: 500px;
+    left: 10%;
+    text-align: justify;
+    background-color: beige;
+}
+
+
+footer {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    color: gray;
+    border: dotted;
+    left: 10%;
+    background-color: darkblue;
+}
+
+div {
+    position: relative; /* ce qui veut dire qu'on peut le bouger dans son élément conteneur. */
+    width: 40%; /* Donc il fait 40% de main qui est sont conteneur */
+    height: 100px;
+    left: 20%;
+    background-color: cyan;
+    border: 1px solid black;
+}
+
+p {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    padding: 10px; /* largeur intérieur */
+    background-color: white;
+
+}
+
+section {
+    position: relative;
+    width: 80%;
+    height: 200px;
+    left: 10%;
+    top: 20px; /* pour décaler l'élément pixel de 20px de l'élément qui le précède */
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+article {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    top: 20px;
+    border: 1px solid black;
+    background-color: darkmagenta;
+}
