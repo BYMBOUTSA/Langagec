@@ -1,0 +1,83 @@
+/* Feuille de style pour cascade.html */
+/* Le positionnement en css */
+
+body {
+    width: 100%;
+    height: 60rem; /* C'est mieux d'utiliser l'unité rem pour la hauteur */
+    padding: 0px;
+    margin: 0px;
+    border: 5px solid black;
+    background-color: blanchedalmond;
+}
+
+header {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    background-color: azure; 
+}
+
+h3, h2 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-decoration: underline;
+    color: grey;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    font-weight: lighter;
+    color:black;
+}
+
+main {
+    position: relative;
+    height: auto; /* hauteur en automatique pour qu'il s'adapte */
+    width: 80%;
+    left: 10%;
+    background-color: azure;
+    border: 1px solid black;
+}
+
+/* on met un point devant le nom de la classe en css pour informer au css qu'on a une classe */
+.positionStatique {
+    position: static; /* c'est la propriété par défaut donc ne sert à rien de la mettre */
+    margin: 6px;
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    padding: 10px;
+    /* ne sont pas pris en compte car on ne peut pas faire bouger un élément statique */
+    left: 40px; 
+    top: 20px;
+}
+
+.positionRelative {
+    position: relative;
+    margin: 6px;
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 10px;
+    /* décaller vers le bas à gauche par rapport au main*/ 
+    left: 230px; /* si on veut mettre les blocs static et relative à la suite */
+    top: -126px; 
+    /* décaller vers le haut à droite par rapport au main */
+    /* right: 30px;
+    bottom: 40px; */
+}
+
+/* Permet de positionner l'élément html n'importe où à l'intérieur du body et non de son conteneur */
+/* On peut faire n'importe quoi avec */
+.positionAbsolute {
+    position: absolute;
+    margin: 6px;
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    padding: 10px;
+    left: 110px;
+    top: 125px; 
+}
